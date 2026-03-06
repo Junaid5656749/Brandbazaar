@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brand Bazaar</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Social Sharing Meta -->
+<meta property="og:title" content="Brand Bazaar – Premium Unstitched Fabrics">
+<meta property="og:description" content="Shop Men & Women branded unstitched clothes. Luxury lawn, khaddar, and classic fabrics.">
+<meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Brand+Bazaar+Banner">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+
+<div class="top-bar">
+Free Nationwide Delivery on Orders Above Rs. 5000
+</div>
+
+<header>
+  <div class="logo">Brand Bazaar</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Slider -->
+<section class="slider">
+  <div class="slides">
+    <div class="slide active">
+      <img src="https://via.placeholder.com/1200x500.png?text=Luxury+Fabric" alt="Luxury Fabric">
+      <div class="caption">
+        <h1>Brand Bazaar</h1>
+        <p>Where Tradition Meets Luxury</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://via.placeholder.com/1200x500.png?text=Women+Collection" alt="Women Collection">
+      <div class="caption">
+        <h1>New Summer Collection</h1>
+        <p>Premium Unstitched Lawn</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://via.placeholder.com/1200x500.png?text=Men+Collection" alt="Men Collection">
+      <div class="caption">
+        <h1>Men Classic Fabric</h1>
+        <p>Elegant Wash & Wear</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+  <div class="category-box">Men Collection</div>
+  <div class="category-box">Women Collection</div>
+</section>
+
+<!-- Product Grid -->
+<section id="products">
+  <h2>Featured Collection</h2>
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250.png?text=Men+Fabric" alt="Men Fabric">
+      <h3>Men Premium Wash & Wear</h3>
+      <p>Rs 3299</p>
+      <button onclick="addToCart('Men Premium Wash & Wear',3299)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250.png?text=Women+Lawn" alt="Women Lawn">
+      <h3>Women Luxury Lawn</h3>
+      <p>Rs 3999</p>
+      <button onclick="addToCart('Women Luxury Lawn',3999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250.png?text=Men+Boski" alt="Men Boski">
+      <h3>Men Classic Boski</h3>
+      <p>Rs 3499</p>
+      <button onclick="addToCart('Men Classic Boski',3499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/250x250.png?text=Women+Designer+Lawn" alt="Women Designer Lawn">
+      <h3>Women Designer Lawn</h3>
+      <p>Rs 4199</p>
+      <button onclick="addToCart('Women Designer Lawn',4199)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Cart -->
+<section class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3 id="total">Total: Rs 0</h3>
+  <button onclick="checkout()">Checkout</button>
+</section>
+
+<!-- Checkout Form -->
+<section class="checkout" id="checkoutSection">
+  <h2>Place Your Order</h2>
+  <form id="orderForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="text" id="phone" placeholder="Phone Number" required>
+    <input type="text" id="city" placeholder="City" required>
+    <select id="product">
+      <option>Select Product</option>
+      <option>Men Premium Wash & Wear</option>
+      <option>Women Luxury Lawn</option>
+      <option>Men Classic Boski</option>
+      <option>Women Designer Lawn</option>
+    </select>
+    <input type="number" id="qty" placeholder="Quantity">
+    <textarea id="address" placeholder="Delivery Address"></textarea>
+    <button type="button" onclick="sendOrder()">Confirm Order</button>
+  </form>
+</section>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/923435396931" class="whatsapp" target="_blank">💬</a>
+
+<script src="script.js"></script>
+</body>
+</html>
